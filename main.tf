@@ -9,6 +9,7 @@ provider "aws" {
   region  = var.region
 }
 
+# Provision DynamoDB table
 resource "aws_dynamodb_table" "run_data" {
   name         = "RunicornUserData"
   billing_mode = "PAY_PER_REQUEST"
