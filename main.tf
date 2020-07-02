@@ -13,7 +13,7 @@ resource "aws_dynamodb_table" "run_data" {
   name         = "RunicornUserData"
   billing_mode = "PAY_PER_REQUEST"
   hash_key     = "user_sub"
-  range        = "created_at"
+  range_key    = "created_at"
 
   attribute {
     name = "user_sub"
