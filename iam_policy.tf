@@ -4,4 +4,5 @@ module "db_put_policy" {
   name_prefix = "runicorn_db_put"
   description = "Put-only DynamoDB role"
   actions     = ["PutItem"]
+  db_arn      = aws_dynamodb_table.run_data.arn
 }
