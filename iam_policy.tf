@@ -1,4 +1,5 @@
 # Use module to create IAM roles
+/*
 module "db_put_policy" {
   source      = "github.com/ilknarf/terraform-iam-policy"
   name_prefix = "runicorn_db_put"
@@ -14,3 +15,4 @@ module "s3_static_read" {
   actions     = ["s3:GetObject"]
   db_arn      = "${aws_s3_bucket.static_assets.arn}/static/*"
 }
+*/

@@ -1,4 +1,5 @@
 # need to use a placeholder zip in order to deploy lambda
+/*
 data "archive_file" "placeholder" {
   type        = "zip"
   output_path = "${path.root}/lambda_placeholder.zip"
@@ -17,3 +18,4 @@ resource "aws_lambda_function" "ssr_lambda" {
 
   runtime = "nodejs12.x"
 }
+*/
